@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   </head>
-  <body>
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
@@ -20,14 +20,23 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Features</a>
+              <a class="nav-link" href="#">Expertise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Team<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Portfolio</a>
             </li>
+            <form class="form-inline">
+              <button class="btn btn-outline-light" type="button">Work With Us</button>
+            </form>
           </ul>
         </div>
       </div>
@@ -51,27 +60,29 @@
       <!-- About -->
       <div class="row">
         <div class="col-lg">
-          <h3 class="mb-4">Optimize Web Presence</h3>
+          <h3 class="mb-4 text-center">Optimize Web Presence</h3>
           <img class="img-fluid mb-4 rounded d-none d-sm-block" src="images/seo.png" alt="SEO Optimization">
-          <p>The beautiful city of Portland, Oregon will be the host city for Full Stack Conf!</p>
-          <p>Explore the future of JavaScript with a lineup of industry professionals. Discover new techniques to advance your career as a web developer.</p>
+          <p>Using unique code and cutting-edge diesign practices, our team works to maximize your digital real estate under the search bar.</p>
+          <p>In recent years, Search Engine Optimization (SEO) has become a necessary part of designing any site on the web.</p>
+          <button class="btn btn-outline-info text-center d-block mx-auto mb-4">Learn more</button>
         </div>
         <div class="col-lg">
-          <h3 class="mb-4">Expert Speakers</h3>
-          <p>Our expert speaker lineup was just announced, so don't wait too long before grabbing your tickets!</p>
-          <p>Want to meet the international JavaScript community and share skills with some of the world's top experts, hackers, and makers? Be the first to know what to expect for the future of JavaScript.</p>
-          <p>Full Stack Conf is committed to being inclusive and welcoming for everyone. We look forward to another intensive day of learning and sharing.</p>
+          <h3 class="mb-4 text-center">Expert Team</h3>
+          <p>Our motto is straight-talk with no BS. We like to let the work speak for itself.</p>
+          <p>Wouldn't it be nice to have a web developer that is on your side for once? Not one who is slick with the jargon, and confusing with the price?</p>
+          <p>It's as simple as choosing which website package is best for you. We do the rest.</p>
+          <button class="btn btn-outline-info text-center d-block mx-auto mb-4">See Packages</button>
         </div>
         <div class="col-lg">
-          <h3 class="mb-4">What You'll Learn</h3>
-          <ul>
-            <li><strong>MongoDB</strong>: NoSQL database</li>
-            <li><strong>Express</strong>: Framework for Node</li>
-            <li><strong>React</strong>: JavaScript library</li>
-            <li><strong>Node.js</strong>: JavaScript environment</li>
-            <li><strong>ES2015</strong>: Latest version of JavaScript</li>
-            <li><strong>Babel</strong>: JavaScript compiler</li>
-          </ul>
+          <h3 class="mb-4 text-center">Serious about code:</h3>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action"><strong>MongoDB</strong>: NoSQL database</a>
+            <a href="#" class="list-group-item list-group-item-action"><strong>Express</strong>: Framework for Node</a>
+            <a href="#" class="list-group-item list-group-item-action"><strong>React</strong>: JavaScript library</a>
+            <a href="#" class="list-group-item list-group-item-action"><strong>Node.js</strong>: JavaScript environment</a>
+            <a href="#" class="list-group-item list-group-item-action"><strong>ES2015</strong>: Latest version of JavaScript</a>
+            <a href="#" class="list-group-item list-group-item-action"><strong>Babel</strong>: JavaScript compiler</a>
+          </div>
         </div>
       </div><!-- /about -->
 
@@ -80,61 +91,83 @@
       <div class="row">
         <div class="col-md-6">
           <div class="card mb-3">
-            <img src="images/john.jpg" class="card-img-top" alt="Larry Dyer Productions">
+            <img src="images/larry.png" class="card-img-top" alt="Larry Dyer Productions">
             <div class="card-body">
               <h5 class="card-title">Larry Dyer Productions</h5>
               <p class="card-text">Larry Dyer is a corporate photographer with over 20 years of experience.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
         </div>
 
         <div class="col-md-6">
+          <div class="card mb-3">
+            <img src="images/johnlawsonii.png" class="card-img-top" alt="John Lawson Photography">
+            <div class="card-body">
+              <h5 class="card-title">John Lawson Foto</h5>
+              <p class="card-text">John Lawson is a freelance fashion and editorial photographer producing vivid imagry.</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-6">
         </div>
 
         <div class="col-md-6">
-        </div>
-
-        <div class="col-md-6">
-        </div>
-
-        <div class="col-md-6">
-        </div>
-
-        <div class="col-md-6">
-        </div>
-      </div><!-- /projects -->
-
+        </div><!-- /projects -->
+      </div>
       <!-- schedule -->
       <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
-      [Schedule goes here]
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Color Schematics: What's Your Palette?</h5>
+            <span class="badge badge-pill badge-info p-2">9:00am</span>
+          </div>
+          <p class="mb-1">Dr. Carpowich - Keynote Speaker</p>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Defying Mainstream: Successfully Unique Sites</h5>
+            <span class="badge badge-pill badge-info p-2">10:00am</span>
+          </div>
+          <p class="mb-1">Sandwich - Stay-at-Home Pa</p>
+        </li>
+        <li class="list-group-item list-group-item-success">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Lunch Time</h5>
+            <span class="badge badge-pill badge-info p-2">12:00pm</span>
+          </div>
+          <p class="mb-1">Free Pizza</p>
+        </li>
+      </ul>
       <!-- /schedule -->
 
       <!-- callout button -->
-      <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5">Build My Site!</button>
+      <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-4" data-toggle="modal" data-target="#contact">Contact Us!</button>
+      <!-- /callout button -->
 
       <!-- signup form -->
       <hr>
-      <div class="row py-4 text-muted">
-        <div class="col-xl-5">
-          <p><strong>About Dreamforge</strong></p>
-          <p>Dreamforge is a boutique web development service based in Berkeley, California.</p>
-        </div>
-        <div class="col-xl-5  ml-auto">
-          <p><strong>Stay up-to-date on Dreamforge Development</strong></p>
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Email">
-            <span class="input-group-btn">
-              <button class="btn btn-primary" type="button">Sign up</button>
-            </span>
+        <div class="row py-4 text-muted">
+          <div class="col-lg-5">
+            <p><strong>About Dreamforge</strong></p>
+            <p>Dreamforge is a boutique web development service based in Berkeley, California.</p>
+          </div>
+          <div class="col-lg-5  ml-auto">
+            <p><strong>Stay up-to-date on Dreamforge Development</strong></p>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Email">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">Sign up</button>
+              </span>
+            </div>
           </div>
         </div>
-      </div>
       <hr><!-- /signup form -->
 
       <!-- footer -->
       <div class="row py-3">
-        <div class="col-md-7">
+        <div class="col-md-7"> 
           <ul class="nav">
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
@@ -143,28 +176,50 @@
               <a class="nav-link" href="#">Portfolio</a>
             </li>
             <li class="nav-item">
-              <div class="btn-group">
-                <!-- split danger button -->
-                <div class="btn-group dropup">
-                  <button type="button" class="btn btn-outline-secondary">Design</button>
-                  <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="sr-only">Toggle Dropdown</span>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Clean Code</a>
-                    <a class="dropdown-item" href="#">Mobile-First</a>
-                    <a class="dropdown-item" href="#">Safer Sites</a>
-                  </div>
+              <div class="btn-group dropup">
+                <button type="button" class="btn btn-outline-secondary">Design Principles</button>
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Clean Code</a>
+                  <a class="dropdown-item" href="#">Mobile Compatability</a>
+                  <a class="dropdown-item" href="#">More Secure</a>
                 </div>
-              </div><!-- split danger button -->
+              </div>
             </li>
           </ul>
         </div>
-        <div class="col-md text-md-right">
-          <small>&copy; 2017 John Lawson</small>
+        <div class="col-md text-right">
+          <small>&copy; 2018 John Lawson</small>
         </div>
       </div><!-- /footer -->
     </div><!-- /.container -->
+
+    <!--=====================================
+     FORM MODAL
+    =====================================-->
+
+    <!-- Modal -->
+      <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="Contact Form" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Form goes here...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
