@@ -204,18 +204,64 @@
       <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="Contact Form" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header bg-info text-white">
               <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              Form goes here...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <!-- contact form -->
+              <form>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  Input referral coupon code for 10% off!
+                </div>
+                <h5 class="mb-4">Basic Info</h5>
+                <div class="form-group">
+                  <label for="formGroupExampleInput" for="name">Name:</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2" for="email">Email:</label>
+                  <input type="text" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="package">Package:</label>
+                  <select class="custon-select form-control" id="package">
+                    <option value="single page website">Single Page Website</option>
+                    <option value="business package">Multipage Website</option>
+                    <option value="online store">Online Store</option>
+                  </select>
+                </div>
+
+                <hr>
+                <h5 class="mb-4">How did you hear about us?</h5>
+                <div class="form-check">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Web Search</span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Word of Mouth</span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Other</span>
+                  </label>
+                </div>
+              </form>
+              <!-- /contact form -->
             </div>
           </div>
         </div>
